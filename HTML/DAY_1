@@ -1,1 +1,88 @@
+<!-- --> <!-- <= It is comment syntax in html -->
+<!-- it is the doc types tag in html5 to mention the file in format  -->
+<!DOCTYPE html>
+<!-- It is lang tag optional-->
+<html lang="en-US">
+  <!-- head and body is both like heart and brain of human being in html -->
+  <head>
+    <!--It is meta is tag used for descrption the informtion of file in browser
+     charset is the keyword said the types of character and symbol 
+    using utf-8 is unicode transformation format 
+    in 8 bits is popular-->
+    <meta charset="utf-8" />
+    <meta name="description"content="Online books and Audio Book sale platform"/>
+    <!-- Title of Website -->
+    <title>Aspire training </title>
+  </head>
+  <body>
+    <!-- <h> </h> is tag contains content in the range of (1 to 6) like <h1> to <h6> and 
+      in also size range of 1 is biggest and 6 smallest   -->
+    <!-- <i> is front style in italic -->
+    <!-- <big> tag is front size somewhat bigger than normal one not equal to <h> tag-->
+    <!-- <small> tag is front size somewhat smaller than normal -->
+       <i><h2><big>Welcome</big> Documatation for html..</h2></i>
+    <!-- <br> tag break tag which gives the space over the two content containers-->
+       <br/>
+    <!-- <b> is front style in bold-->
+    <!-- <p> is paragraph tag which is used to write a content on the webpage -->
+       <b><p>Knowledge is only key for success</p></b>
+    <!-- <a> archor tag can content the anything insert it-->
+       <p>You can reach Me at:</p>
+    <!-- <address> is tag can content the anything insert it makes hyperlink-->
+       <address>
+        <a href="11/113E,cheran Nagar,Nall Road,Sirumugai-641302">Address</a>
+        <a href="pradeep99424@gmail.com">Email</a>
+        <a href="+917373977424">Phone</a>
+       </address>
+       <p>Coimbatore Forecasting:</p>
+    <!-- <article> is tag can content the anything in css for desgining method-->
+       <article class="forecast">
+         <h1>Weather forecast for Seattle</h1>
+         <article class="day-forecast">
+            <h2>03 March 2018</h2>
+            <p>Rain.</p>
+         </article>
+        </article>
+
+    <!-- <ul> is unordered list which can in rows-->
+    <!-- <li> is list item which can access the content on the list-->
+    <!-- href is hyperlink thing which can embed in small name-->
+       <ul>
+        <li><a href="https://google.co.in">Website</a></li>
+        <li><a href="pradeep99424@gmail.com">Email</a></li>
+        <li><a href="+917373977424">Phone</a></li>
+       </ul>
+    <!-- <ol> is ordered list which can in numberic order rows-->
+      <ol>
+        <li><a href="https://google.co.in">Website</a></li>
+        <li><a href="pradeep99424@gmail.com">Email</a></li>
+        <li><a href="+917373977424">Phone</a></li>
+      </ol>
+    <!--<sub> is subscript tag which help to suffix of letter -->
+      <p>water chemistry terms is H<sub>2</sub>O</p>
+    <!--<sup> is superscript tag which help to preffix of letter -->
+      <p>ten square math terms is 10<sup>2</sup>=100</p>
+    <!-- style="color:---" is color content in continers as well-->
+      <p style="color: blueviolet;">Whenever you read a good book, somewhere in the world a door opens to allow in more light </p>
+    <!-- figure is tag audio in the web browser --> 
+    <!-- Figcaption is tag is embed with title of the audio-->
+    <!-- audio is tag which embed the audio format file has url or files-->
+      <figure>
+        <figcaption>Listen to the audio</figcaption>
+        <audio
+            controls
+            src="/media/cc0-audio/t-rex-roar.mp3">
+                <a href="/media/cc0-audio/t-rex-roar.mp3">
+                    Download audio
+                </a>
+        </audio>
+      </figure>
+    <!-- button is tag which embed the click the over web broser-->
+      <button class="favorite styled"type="button">click here
+      </button>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <a='navbar'> </a>
+  </body>
+</html>
+
 
