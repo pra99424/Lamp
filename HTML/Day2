@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day_2</title>
+
+    <style>
+        #head{
+        background-color:orange;
+        }
+        .food {
+        border: 10px ridge red;
+        background-color: white;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction:column;
+        }
+        table {
+        width: 50%;
+        margin-bottom: 30px;
+        }
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+        }
+        table>thead>tr>th{
+        font-weight:Bold;
+        font-size:40px;
+        }
+        thead{
+        background-color: #333;
+        color: #fff;
+        }
+        </style>
+        
+</head>
+<body>
+    <div class="Food">
+        <table class="center"><thead>
+        <tr>
+        <th colspan="8">Menu of the Food</th>
+        </tr>
+        </thead>
+        <tr>
+        <td><b>SI.NO</b></td>
+        <td><b>Name</b></td>
+        <td><b>Quantity</b></td>
+        <td><b>Cost</b></td>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>Idly</td>
+        <td>02</td>
+        <td>30.00</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>Dosai</td>
+        <td>01</td>
+        <td>45.00</td>
+        </tr><tr>
+        <td>3</td>
+        <td>Upma</td>
+        <td>750G</td>
+        <td>35.00</td>
+        </tr>
+        </table>
+        
+        <p style="text-align:center">Thanks Alot</p>
+        <p style="text-align:center">Have Nice day!</p>
+        
+        <div>
+        <label>Do I need a extra of sambar/chatney? </label>
+        <input type="checkbox">
+        </div>
+        <div>
+        <label>Do you extras Foods? </label>
+        <input type="checkbox">
+        <pre style="text-align:center">
+        <h2><a href="https://www.zomato.com/">You can order food in below link</a></h2>
+        <h2 id="head"><a href="https://github.com/pra99424/Lamp">You can view my works through github</a></h2>
+        <button type="button" onclick="alert('You happy with my work done')">After Completion click me!</button>
+        </pre>
+        </div>
+        
+</body>
+</html>
