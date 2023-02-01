@@ -1,0 +1,43 @@
+body{
+    background-image: linear-gradient(red,yellow,green);
+    height: 1000px;
+    width: 1000px;
+}
+.heading{
+        padding-left: 56%;
+}
+
+
+.homepage{
+    height: 34px;
+    color:blue;
+    background-color: red;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+
+.a ul > li {
+    list-style-type: none;
+    padding-left: 0;
+    gap: 2rem;
+}
+
+.a {
+    display: inline-block;
+}
+
+.a b:after {
+    display: inline-block;
+    color: #000;
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+.r{
+    font-size: 60%;
+    padding:0 4px;
+    color: black;
+
+}
