@@ -1,0 +1,163 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+title
+{
+    font-size: larger;
+    text-align: center;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+}
+ol[type="b" s]
+{
+    color:"red";
+}
+ol[type="I" s]
+{
+    color: limegreen;
+}    
+ol[type="A" ]
+{
+    color: blue;
+}
+ol[type="I" i]
+{
+    color: yellow;
+}
+li:first-of-type + li +li{
+    color: red;
+  }
+  
+h1+p{
+    color:aqua;
+}/*para comes immediately after h1*/
+
+span{
+    background-color:olivedrab;
+}
+div > span{
+    background-color:teal;
+}
+.para{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+h4{
+    text-decoration-line:underline overline;
+    text-decoration-color:teal;
+}
+h3{
+    text-decoration-line:overline;
+    text-decoration-color:orange;   
+}
+h2{
+    text-decoration-line:line-through;
+    text-decoration-color:aqua;
+}
+h1{
+    color: teal;
+}
+a[href="https://para.com"]
+{
+    color:brown;
+}
+a[href^="#"]
+{
+    color:aqua;
+}
+a[href$=".org"]
+{
+    color:tan;
+}
+a[href*="google"]
+{
+    color:tomato;
+}
+a[href*="CaSe" i]
+{
+    color:blueviolet;
+}
+
+a[href*="COCO" s]
+{
+    color:olive;
+}
+a[href^="https"][href$=".in"] {
+    color: teal;
+  }
+  
+
+img[class~=para]
+{
+    width:20px;
+    height:auto;
+}
+ol[type="A" s]
+{
+    background-color: red;
+    list-style-type: lower-alpha;
+}
+ol[type="B" s]
+{
+    background-color: green;
+    list-style-type: upper-alpha;
+}
+ol[type="B" s]
+{
+    background-color: yellow;
+    list-style-type: square;
+}
+ol[type="c" i]
+{
+    background-color: aqua;
+    list-style-type: upper-alpha;
+}
+
+div[lang]{
+    font-weight:bold;
+    color:brown;
+}
+div:not[lang]{
+    font-style:italic;
+}
+div[lang~="en-us"]
+{
+    color:orange;
+}
+div[lang="pt"]
+{
+    color:palevioletred;
+}
+div[lang|="zh"]
+{
+    color:#098;
+}
+div[data-lang="zh-TW"]
+{
+    color:khaki;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
