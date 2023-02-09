@@ -1,10 +1,12 @@
-*{
+* {
     font-family: 'Times New Roman', Times, serif;
 }
-body{
+
+body {
     background-color: black;
     color: whitesmoke;
 }
+
 .col {
     column-count: 2;
     column-width: 50%;
@@ -12,7 +14,8 @@ body{
     padding-top: 5px;
     margin-top: auto;
 }
+
 .separte {
-    columns: 2 3rem ;
+    columns: 2 3rem;
 
 }

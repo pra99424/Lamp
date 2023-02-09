@@ -1,167 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Indepth learning on html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="day7.css"/>
+    <link rel="stylesheet" href="day7.css" />
     <title>HTML practice</title>
 </head>
+
 <body>
     <div class="Food">
-        <table class="center"><thead>
-        <tr>
-        <th colspan="8">Menu of the Food</th>
-        </tr>
-        </thead>
-        <tr>
-        <td><b>SI.NO</b></td>
-        <td><b>Name</b></td>
-        <td><b>Quantity</b></td>
-        <td><b>Cost</b></td>
-        </tr>
-        <tr>
-        <td>1</td>
-        <td>Idly</td>
-        <td>02</td>
-        <td>30.00</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Dosai</td>
-            <td>01</td>
-            <td>45.00</td>
+        <table class="center">
+            <thead>
+                <tr>
+                    <th colspan="8">Menu of the Food</th>
+                </tr>
+            </thead>
+            <tr>
+                <td><b>SI.NO</b></td>
+                <td><b>Name</b></td>
+                <td><b>Quantity</b></td>
+                <td><b>Cost</b></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Idly</td>
+                <td>02</td>
+                <td>30.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dosai</td>
+                <td>01</td>
+                <td>45.00</td>
 
-        </tr>
-        <tr>
-        <td>3</td>
-        <td>Upma</td>
-        <td>750G</td>
-        <td>35.00</td>
-        </tr>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Upma</td>
+                <td>750G</td>
+                <td>35.00</td>
+            </tr>
         </table>
-        
+
         <p style>Thanks Alot</p>
         <p style>Have Nice day!</p>
-        
+
         <div>
-        <label>Do I need a extra of sambar/chatney? </label>
-        <input type="checkbox">
+            <label>Do I need a extra of sambar/chatney? </label>
+            <input type="checkbox">
         </div>
         <div>
-        <label>Do you extras Foods? </label>
-        <input type="checkbox">
-        <pre style="text-align:center">
+            <label>Do you extras Foods? </label>
+            <input type="checkbox">
+            <pre style="text-align:center">
         <h2><a href="https://www.zomato.com/">You can order food in below link</a></h2>
         <h2 id="head"><a href="https://github.com/pra99424/Lamp">You can view my works through github</a></h2>
         <button type="button" onclick="alert('You happy with my work done')">After Completion click me!</button>
         </pre>
         </div>
 
-        <button class="favorite styled"type="button">click here
+        <button class="favorite styled" type="button">click here
         </button>
 
-        <audio
-        controls
-        src="/media/cc0-audio/t-rex-roar.mp3">
+        <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
             <a href="/media/cc0-audio/t-rex-roar.mp3">
                 Download audio
             </a>
-    </audio>
-    <ol type="A">
-        <li >pori</li>
-        <li >Idly</li>
-        <li >Dosai</li>
-        <li >Briyani</li>
-    </ol>
-    <ol type="I">
-        <li >pori</li>
-        <li >Idly</li>
-        <li >Dosai</li>
-        <li >Briyani</li>
-    </ol>
-    <ol type="B">
-        <li >pori</li>
-        <li >Idly</li>
-        <li >Dosai</li>
-        <li >Briyani</li>
-    </ol>
-    <ol type="i">
-        <li >pori</li>
-        <li >Idly</li>
-        <li >Dosai</li>
-        <li >Briyani</li>
-    </ol>
-      
-    <div>
-        <h1>Adjacent sibiling combinator</h1>
-        <ul>
-            <li>First</li>
-            <li>Second</li>
-            <li>Third</li>
-        </ul>
-    
-        <h1>adjacent sibiling</h1>
-       
-        <p>good morning...</p>
-        <h1>Child combinator
-        <div>
-            <span>welcome to entry point.
-                <span>welcome to the point 2</span>
-
-            </span>
-        </div>
-            <span>welcome to point 3</span>
-        <h2>Text-decoration</h2>
-        <u></u>for te<u></u>
-        <p class="m_para">wavy underline</p>
-        <h3>overline</h3>
-        <h4>underline overline</h4>
-        <h2>line-through</h2>
-    </h1></div>
-    <div>
-        <h1>Attribute selectors</h1>
-        <p>For Links</p>
-        <a href="https://www.google.com/url?q=https://para.com&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw02c8NpjK-jNcGbjl5p4GeK" target="_blank" rel="noreferrer">elements with attribute name with matching values</a><br>
-        <a href="#m__" rel="noreferrer">elements with attribute name with starting values</a><br>
-        <a href="https://www.google.com/url?q=https://para.org&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw1RjW0EqUyZnKMa8u48I1gf" target="_blank" rel="noreferrer">elements with attribute name which end with .org</a><br>
-        <a href="https://www.google.com/url?q=https://google.com&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw37KQ7RZdcuHWpjFvjIh5a6" target="_blank" rel="noreferrer">elements with attribute name atleast one occurence of value within the string</a><br>
-        <a href="https://www.google.com/url?q=https://yCase.com&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw0gyuAVYn9sATi1rQv13ixI" target="_blank" rel="noreferrer">Case inSensitive</a><br>
-        <a href="https://www.google.com/url?q=https://COCO.com&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw3HhTYdGfEd31YbUzZp9vPS" target="_blank" rel="noreferrer">case sensitive</a><br>
-        <a href="https://www.google.com/url?q=https://google.in&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw1ZR84d5fJAnCygQ1ArVBMq" target="_blank" rel="noreferrer">starts and ends with </a><br>
-        <img class="m_para" src="https://ci4.googleusercontent.com/proxy/HdFHkdaWZKr2aaQHm6rNESAu9LlmuhbTCshPqnb-BM9spIcIwC9GppbSfdcbhBWYM7uB_29gZM3ss-FTEQ1YLV99LHmoY6HW5S5moRn4OKDuBIT4YDW7gsZF81RkeTFvZRGrtI8n3mJbkT4EAuLKy8dc9LSBFTKYoO9urxawQnQ=s0-d-e1-ft#https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&amp;dl=pexels-anjana-c-674010.jpg&amp;fm=jpg">
-        <hr>
-        <p>For ordered lists</p>
+        </audio>
         <ol type="A">
-            <li>default </li>
-            <li>default</li>
-            
-
+            <li>pori</li>
+            <li>Idly</li>
+            <li>Dosai</li>
+            <li>Briyani</li>
         </ol>
-        <ol type="b">
-            <li>sensitive</li>
-            <li>here it is insentisive</li>
-            
-            
+        <ol type="I">
+            <li>pori</li>
+            <li>Idly</li>
+            <li>Dosai</li>
+            <li>Briyani</li>
         </ol>
         <ol type="B">
-            <li>sensitive</li>
-            
+            <li>pori</li>
+            <li>Idly</li>
+            <li>Dosai</li>
+            <li>Briyani</li>
         </ol>
-        <ol type="C">
-            <li>insentisive</li>
-            
-        </ol>          
-        <hr>
-        <p>Languages - div</p>
-        <div lang="en-US">Good morning</div>
-        <div class="m_i">good afternoon</div>
-        <div lang="pt">OlÃ¡ Mundo!</div>
-        <div lang="zh-CN">ä¸çæ¨å¥½ï¼</div>
-        <div lang="zh-TW">ä¸çæ¨å¥½ï¼</div>
-        <div>ä¸çæ¨å¥½ï¼</div>
-        <button class="remandem"type="button">Understanding of Rem vs em</button>
+        <ol type="i">
+            <li>pori</li>
+            <li>Idly</li>
+            <li>Dosai</li>
+            <li>Briyani</li>
+        </ol>
 
-    </div>
+        <div>
+            <h1>Adjacent sibiling combinator</h1>
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+            </ul>
+
+            <h1>adjacent sibiling</h1>
+
+            <p>good morning...</p>
+            <h1>Child combinator
+                <div>
+                    <span>welcome to entry point.
+                        <span>welcome to the point 2</span>
+
+                    </span>
+                </div>
+                <span>welcome to point 3</span>
+                <h2>Text-decoration</h2>
+                <u></u>for te<u></u>
+                <p class="m_para">wavy underline</p>
+                <h3>overline</h3>
+                <h4>underline overline</h4>
+                <h2>line-through</h2>
+            </h1>
+        </div>
+        <div>
+            <h1>Attribute selectors</h1>
+            <p>For Links</p>
+            <a href="https://www.google.com/url?q=https://para.com&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw02c8NpjK-jNcGbjl5p4GeK"
+                target="_blank" rel="noreferrer">elements with attribute name with matching values</a><br>
+            <a href="#m__" rel="noreferrer">elements with attribute name with starting values</a><br>
+            <a href="https://www.google.com/url?q=https://para.org&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw1RjW0EqUyZnKMa8u48I1gf"
+                target="_blank" rel="noreferrer">elements with attribute name which end with .org</a><br>
+            <a href="https://www.google.com/url?q=https://google.com&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw37KQ7RZdcuHWpjFvjIh5a6"
+                target="_blank" rel="noreferrer">elements with attribute name atleast one occurence of value within the
+                string</a><br>
+            <a href="https://www.google.com/url?q=https://yCase.com&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw0gyuAVYn9sATi1rQv13ixI"
+                target="_blank" rel="noreferrer">Case inSensitive</a><br>
+            <a href="https://www.google.com/url?q=https://COCO.com&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw3HhTYdGfEd31YbUzZp9vPS"
+                target="_blank" rel="noreferrer">case sensitive</a><br>
+            <a href="https://www.google.com/url?q=https://google.in&amp;source=gmail-html&amp;ust=1675775432211000&amp;usg=AOvVaw1ZR84d5fJAnCygQ1ArVBMq"
+                target="_blank" rel="noreferrer">starts and ends with </a><br>
+            <img class="m_para"
+                src="https://ci4.googleusercontent.com/proxy/HdFHkdaWZKr2aaQHm6rNESAu9LlmuhbTCshPqnb-BM9spIcIwC9GppbSfdcbhBWYM7uB_29gZM3ss-FTEQ1YLV99LHmoY6HW5S5moRn4OKDuBIT4YDW7gsZF81RkeTFvZRGrtI8n3mJbkT4EAuLKy8dc9LSBFTKYoO9urxawQnQ=s0-d-e1-ft#https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&amp;dl=pexels-anjana-c-674010.jpg&amp;fm=jpg">
+            <hr>
+            <p>For ordered lists</p>
+            <ol type="A">
+                <li>default </li>
+                <li>default</li>
+
+
+            </ol>
+            <ol type="b">
+                <li>sensitive</li>
+                <li>here it is insentisive</li>
+
+
+            </ol>
+            <ol type="B">
+                <li>sensitive</li>
+
+            </ol>
+            <ol type="C">
+                <li>insentisive</li>
+
+            </ol>
+            <hr>
+            <p>Languages - div</p>
+            <div lang="en-US">Good morning</div>
+            <div class="m_i">good afternoon</div>
+            <div lang="pt">OlÃ¡ Mundo!</div>
+            <div lang="zh-CN">ä¸çæ¨å¥½ï¼</div>
+            <div lang="zh-TW">ä¸çæ¨å¥½ï¼</div>
+            <div>ä¸çæ¨å¥½ï¼</div>
+            <button class="remandem" type="button">Understanding of Rem vs em</button>
+
+        </div>
 </body>
+
 </html>

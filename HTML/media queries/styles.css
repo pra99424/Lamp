@@ -1,39 +1,45 @@
-*{
+* {
     font-family: 'Times New Roman', Times, serif;
 }
-body{
+
+body {
     background-color: aqua;
 }
-dl{
-    padding-left:10px;
+
+dl {
+    padding-left: 10px;
     margin-left: 20px;
 }
 
 @media screen and (min-width:900px) {
-    body{
+    body {
         background-color: rgb(255, 255, 255);
-    }  
+    }
 }
 
-@media screen and (max-width:600px){
-    body{
+@media screen and (max-width:600px) {
+    body {
         background-color: chartreuse;
     }
 }
+
 @media (any-hover: hover) {
     a:hover {
-      background: rgb(224, 12, 12);
+        background: rgb(224, 12, 12);
     }
 }
-@media (min-height: 700px), screen and (orientation: portrait) {
-    body{
+
+@media (min-height: 700px),
+screen and (orientation: portrait) {
+    body {
         background-repeat: no-repeat;
         background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--afTtY3vA--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/31n9wn9tl8fty26pjxc2.jpg");
     }
 }
+
 @media all and (display-mode: fullscreen) {
     body {
-      margin: 0;
-      border: 5px solid black;
+        margin: 0;
+        border: 5px solid black;
     }
 }

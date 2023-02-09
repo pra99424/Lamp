@@ -1,16 +1,17 @@
-body{
-    background-image: linear-gradient(red,yellow,green);
+body {
+    background-image: linear-gradient(red, yellow, green);
     height: 1000px;
     width: 1000px;
 }
-.heading{
-        padding-left: 56%;
+
+.heading {
+    padding-left: 56%;
 }
 
 
-.homepage{
+.homepage {
     height: 34px;
-    color:blue;
+    color: blue;
     background-color: red;
 }
 
@@ -18,7 +19,7 @@ nav {
     border-bottom: 1px solid black;
 }
 
-.a ul > li {
+.a ul>li {
     list-style-type: none;
     padding-left: 0;
     gap: 2rem;
@@ -35,9 +36,10 @@ nav {
     font-weight: bold;
     padding: 0 3px;
 }
-.r{
+
+.r {
     font-size: 60%;
-    padding:0 4px;
+    padding: 0 4px;
     color: black;
 
 }
