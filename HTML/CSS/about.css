@@ -1,0 +1,12 @@
+body {
+    background-size: cover;
+    background-color: rgb(211, 211, 223);
+}
+
+.content {
+    text-align: center;
+}
+
+#highlight {
+    font-size: x-large;
+}

@@ -1,0 +1,48 @@
+.Backgroundimage {
+    background-color: #9469b6;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    float: left;
+    width: 400px;
+    height: 100px;
+
+}
+
+#College {
+    padding-left: 38%;
+    width: 25%;
+
+}
+
+table {
+    border-collapse: collapse;
+    border-width: 2px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.first {
+    text-align: center;
+}
+
+#Department {
+    text-align: center;
+
+}
+
+.heading {
+    background-color: rgb(112, 179, 184);
+    font-size: larger;
+    text-align: center;
+}
+
+a[href] {
+    color: red;
+}

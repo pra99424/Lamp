@@ -6,37 +6,7 @@
     <link rel="icon"
         href="https://upload.wikimedia.org/wikipedia/en/7/77/Bannari_Amman_Institute_of_Technology_logo.png">
     <meta charset="utf-8">
-    <style>
-        .Backgroundimage {
-            background-color: #9469b6;
-            height: 100px;
-            text-align: center;
-            color: white;
-        }
-
-        .logo {
-            float: left;
-            width: 400px;
-            height: 100px;
-
-        }
-
-        #College {
-            padding-left: 38%;
-            width: 25%;
-
-        }
-
-        table {
-            border-collapse: collapse;
-            border-width: 2px;
-        }
-
-        footer {
-            text-align: center;
-            padding-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="/HTML/CSS/webpage.css">
 </head>
 
 <body>
@@ -44,25 +14,25 @@
         <div class="Backgroundimage">
             <img class="logo" src=https://www.bitsathy.ac.in/assets/images/logo.png>
             <h1>Bannari Amman Institute of Technology</h1>
-            <a href="#Home" style="color: red" target="_blank">Home</a>&ensp;
-            <a href="About.html" style="color:red">About</a>&ensp;
-            <a href="Login.html" style="color:red" target="_blank">Login</a>&ensp;
-            <a href="#Department" style="color:red" target="_blank">Department</a>&ensp;
-            <a href="#Content" style="color:red">Contact Us</a>
+            <a href="#Home" target="_blank">Home</a>&ensp;
+            <a href="About.html">About</a>&ensp;
+            <a href="Login.html" target="_blank">Login</a>&ensp;
+            <a href="#Department" target="_blank">Department</a>&ensp;
+            <a href="#Content">Contact Us</a>
 
         </div>
     </header>
     <main>
         <div>
             <div id="Home">
-                <center>
-                    <P><strong>Bannari Amman Institute of Technology</strong> is an engineering college located in
-                        Sathyamangalam, Erode, Tamil Nadu, India. It was founded by the Bannari Amman Group in 1996 and
-                        is affiliated to Anna University. </P>
-                </center>
-                <center>
-                    <h1 style="background-color: rgb(112, 179, 184);">Where you Learn to Stay Ahead</h1>
-                </center>
+
+                <P class="first"><strong>Bannari Amman Institute of Technology</strong> is an engineering college
+                    located in Sathyamangalam, Erode, Tamil Nadu, India. It was founded by the Bannari Amman Group in
+                    1996 and
+                    is affiliated to Anna University. </P>
+
+                <p class="heading">Where you Learn to Stay Ahead</p>
+
                 <article>
                     <img id="College"
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjEbvtEMuzx-ew5385oWKPJC2P2JmMbAD1yw&usqp=CAU"
@@ -95,56 +65,54 @@
         </div>
 
         <div id="Department">
-            <center>
-                <h1 style="background-color: rgb(112, 179, 184);">Department</h1>
-            </center>
-            <center>
-                <table border="1">
-                    <thead style="font-weight: bold">
-                        <tr>
-                            <td style="width:65%">
-                                <center>Departments Lists</center>
-                            </td>
-                            <td style="width:65%">
-                                <center>Departments Lists</center>
-                            </td>
 
-                        </tr>
-                    </thead>
+            <p class="heading">Department</p>
+
+            <table border="1">
+                <thead style="font-weight: bold">
                     <tr>
-                        <td><a href="Department.html" target="_blank"> AERONAUTICAL ENGINEERING</a></td>
-                        <td><a href="Department.html" target="_blank">AGRICULTURAL ENGINEERING</a></td>
+                        <td style="width:65%">
+                            Departments Lists
+                        </td>
+                        <td style="width:65%">
+                            Departments Lists
+                        </td>
+
                     </tr>
-                    <tr>
-                        <td><a href="Department.html" target="_blank"> CIVIL ENGINEERING</a></td>
-                        <td><a href="Department.html" target="_blank"> COMPUTER SCIENCE AND ENGINEERING</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="Department.html" target="_blank">ELECTRICAL AND ELECTRONICS ENGINEERING</a></td>
-                        <td><a href="Department.html" target="_blank">ELECTRONICS AND COMMUNICATION ENGINEERING</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="Department.html" target="_blank">INFORMATION TECHNOLOGY</a></td>
-                        <td><a href="Department.html" target="_blank">MECHANICAL ENGINEERING</a></td>
-                    </tr>
-                </table>
-            </center>
+                </thead>
+                <tr>
+                    <td><a href="Department.html" target="_blank"> AERONAUTICAL ENGINEERING</a></td>
+                    <td><a href="Department.html" target="_blank">AGRICULTURAL ENGINEERING</a></td>
+                </tr>
+                <tr>
+                    <td><a href="Department.html" target="_blank"> CIVIL ENGINEERING</a></td>
+                    <td><a href="Department.html" target="_blank"> COMPUTER SCIENCE AND ENGINEERING</a></td>
+                </tr>
+                <tr>
+                    <td><a href="Department.html" target="_blank">ELECTRICAL AND ELECTRONICS ENGINEERING</a></td>
+                    <td><a href="Department.html" target="_blank">ELECTRONICS AND COMMUNICATION ENGINEERING</a></td>
+                </tr>
+                <tr>
+                    <td><a href="Department.html" target="_blank">INFORMATION TECHNOLOGY</a></td>
+                    <td><a href="Department.html" target="_blank">MECHANICAL ENGINEERING</a></td>
+                </tr>
+            </table>
+
         </div>
 
         </div>
     </main>
 
     <footer>
-        <center>
-            <h1 style="background-color: rgb(112, 179, 184);">Contact Us</h1>
-        </center>
+
+        <p class="heading">Contact Us</p>
+
         <div id="Content">
             <address>
                 <a href="stayahead[at]bitsathy.ac.in">Email</a><br>
                 <a href="admissions[at]bitsathy.ac.in">Admission</a><br>
                 <a href="digitalmarketing[at]bitsathy.ac.in">Website</a><br>
                 <a href="+91 4295 226000">Phone No</a>
-                <p></p>
             </address>
         </div>
         &copy Copyright 2023-BIT
