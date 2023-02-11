@@ -1,7 +1,9 @@
+/* Universal Selectors */
 * {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* Element Selectors */
 title {
     font-size: larger;
     text-align: center;
@@ -11,6 +13,7 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* Attribute Selectors */
 ol[type="b" s] {
     color: "red";
 }
@@ -30,6 +33,7 @@ ol[type="I" i] {
 li:first-of-type+li+li {
     color: red;
 }
+/* Adjcent Sibiling Combinators */
 
 h1+p {
     color: aqua;
@@ -40,10 +44,11 @@ span {
     background-color: olivedrab;
 }
 
+/* Chid Combinators */
 div>span {
     background-color: teal;
 }
-
+/* class Selectors */
 .para {
     text-decoration-line: underline;
     text-decoration-style: wavy;
@@ -153,4 +158,75 @@ div[data-lang="zh-TW"] {
     border: 2px dashed green;
     font-size: 2 rem;
     padding: 0.5em;
+}
+
+/* Pseudo-elements */
+
+p::first-line {
+    color: red;
+    font-weight: bold;
+}
+
+p::first-letter {
+    color: teal;
+}
+
+p.para::first-letter {
+    color: yellow;
+}
+
+::marker {
+    color: brown;
+}
+
+h2::selection {
+    color: green;
+    background-color: rosybrown;
+}
+
+h1::after {
+    content: url(https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=300);
+}
+
+/* Pseudo-classes */
+
+p:first-child {
+    color: red;
+}
+
+a:link {
+    color: rebeccapurple;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: olivedrab;
+}
+
+a:active {
+    color: salmon;
+}
+
+a.para:hover {
+    font-size: 20px;
+    color: sienna;
+}
+
+p:hover {
+    color: orange;
+}
+
+p:last-child {
+    color: khaki;
+}
+
+p i:first-child {
+    color: blue;
+}
+
+li:nth-child(2) {
+    border: 2px solid green;
 }
