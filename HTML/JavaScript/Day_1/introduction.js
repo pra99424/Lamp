@@ -73,4 +73,6 @@ function fetchVideo() {
       console.error(`Download error: ${err.message}`);
     });
 }
-
+//using innerHTML and GetElementById we can see the text in webpage
+let text = "Pradeep T";  // String written inside quotes
+document.getElementById("texting in website").innerHTML = text;
