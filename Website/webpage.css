@@ -1,4 +1,4 @@
-.Backgroundimage {
+.backgroundimage {
     background-color: #9469b6;
     height: 100px;
     text-align: center;
@@ -12,7 +12,7 @@
 
 }
 /* Id Selectors */
-#College {
+#college {
     padding-left: 38%;
     width: 25%;
 
@@ -32,7 +32,7 @@ footer {
     text-align: center;
 }
 
-#Department {
+#department {
     text-align: center;
 
 }
