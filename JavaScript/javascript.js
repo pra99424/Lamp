@@ -235,9 +235,9 @@ console.log(str_1.fixed());
 
 array
 
-let arr=['nokia','samsung','realme','redmi','oneplus','vivo','apple','iqoo']
+let arr = ['nokia', 'samsung', 'realme', 'redmi', 'oneplus', 'vivo', 'apple', 'iqoo']
 
-let category=[1,2,3,[4,5,6,7]]
+let category = [1, 2, 3, [4, 5, 6, 7]]
 
 console.log(arr);
 
@@ -289,7 +289,7 @@ console.log(arr)
 
 // Remove an item
 
-arr.pop() 
+arr.pop()
 // last will remove
 
 console.log(arr)
@@ -305,9 +305,9 @@ console.log(arr)
 
 
 // splice is used to remove an item by using an index number 
-splice(start,end)
+splice(start, end)
 
-arr.splice(1,3)
+arr.splice(1, 3)
 
 console.log(arr)
 
@@ -326,18 +326,18 @@ array_2.shift(); // removing element in first position
 console.log(array_2);
 //accessing every element in the array
 for (var elements of array) {
-    console.log(elements);
+  console.log(elements);
 }
 // map()
 function double(number) {
-    return number * 3;
+  return number * 3;
 }
 var numbers = [2, 4, 6, 8, 10];
 var twice = numbers.map(double);
 console.log(twice);
 //filter
 function long(companies) {
-    return companies.length > 3;
+  return companies.length > 3;
 }
 const companies = ['aspire', 'tcs', 'cts', 'zoho', 'dell'];
 const filteration = companies.filter(long);
@@ -365,14 +365,14 @@ console.log(number_1.copyWithin(0, 3, 4));
 const array1 = ["a", "b", "c"];
 const arrayEntries = array1.entries();
 for (const element of arrayEntries) {
-    console.log(element);
+  console.log(element);
 }
 //Array.prototype.every()
 const check = [2, 4, 6, 8, 10]
 const every_ele = check.every(finding)
 console.log(every_ele);
 function finding(result) {
-    return result >= 2;
+  return result >= 2;
 }
 //Array.prototype.fill()
 console.log(number_1.fill(5));
@@ -419,61 +419,139 @@ const choice = document.getElementById("food");
 const paragraph = document.getElementById("list");
 choice.addEventListener('change', details);
 function details() {
-    const info = choice.value;
-    if (info == 'Idly') {
-        paragraph.textContent = 'Idli or idly is a type of savoury rice cake, originating from South India, popular as a breakfast food in Southern India and in Sri Lanka.';
-        paragraph.style.backgroundColor = "pink";
-    }
-    else if (info == 'Dosai') {
-        paragraph.textContent = 'A dosa, also called dosai, dosey, or dosha is a thin pancake in South Indian cuisine made from a fermented batter of ground black lentils and rice.';
-        paragraph.style.backgroundColor = "red";
-    }
-    else if (info == 'Pongal') {
-        paragraph.textContent = 'Pongal, also referred to as Thai Pongal, is a multi-day Hindu harvest festival celebrated by Tamils in India and Sri Lanka.';
-        paragraph.style.backgroundColor = "brown";
-    }
-    else if (info == 'Briyani') {
-        paragraph.textContent = 'Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent as a variety of Persian pilaf.';
-        paragraph.style.backgroundColor = "powderblue";
-    }
-    else if (info == 'Poori') {
-        paragraph.textContent = 'Poori or Puri is a traditional Indian fried bread that is delicious to enjoy with almost any main dish.';
-        paragraph.style.backgroundColor = "orange";
-    }
+  const info = choice.value;
+  if (info == 'Idly') {
+    paragraph.textContent = 'Idli or idly is a type of savoury rice cake, originating from South India, popular as a breakfast food in Southern India and in Sri Lanka.';
+    paragraph.style.backgroundColor = "pink";
+  }
+  else if (info == 'Dosai') {
+    paragraph.textContent = 'A dosa, also called dosai, dosey, or dosha is a thin pancake in South Indian cuisine made from a fermented batter of ground black lentils and rice.';
+    paragraph.style.backgroundColor = "red";
+  }
+  else if (info == 'Pongal') {
+    paragraph.textContent = 'Pongal, also referred to as Thai Pongal, is a multi-day Hindu harvest festival celebrated by Tamils in India and Sri Lanka.';
+    paragraph.style.backgroundColor = "brown";
+  }
+  else if (info == 'Briyani') {
+    paragraph.textContent = 'Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent as a variety of Persian pilaf.';
+    paragraph.style.backgroundColor = "powderblue";
+  }
+  else if (info == 'Poori') {
+    paragraph.textContent = 'Poori or Puri is a traditional Indian fried bread that is delicious to enjoy with almost any main dish.';
+    paragraph.style.backgroundColor = "orange";
+  }
 }
+
+//Switch
+
+const select = document.querySelector('select');
+const textselecting = document.querySelector('#forecast');
+
+select.addEventListener('change', setWeather);
+
+function setWeather() {
+  const choice = select.value;
+
+  switch (choice) {
+    case 'sunny':
+      textselecting.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+      break;
+    case 'rainy':
+      textselecting.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
+      break;
+    case 'snowing':
+      textselecting.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+      break;
+    case 'overcast':
+      textselecting.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+      break;
+    default:
+      textselecting.textContent = '';
+  }
+}
+
+//Ternary operator
+
+const selecting = document.querySelector('select');
+const html = document.querySelector('html');
+document.body.style.padding = '10px';
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+
+selecting.addEventListener('change', () => selecting.value === 'black'
+  ? update('black', 'white')
+  : update('white', 'black')
+);
+
+//while
+let n = 0;
+while (n < 3) {
+  n++;
+}
+console.log(n);
+
+//do while
+let pattern = '';
+let i = 0;
+do {
+  i = i + 1;
+  pattern = pattern + i;
+} while (i < 5);
+console.log(result);
+
+//for
+let cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+for (let cat of cats) {
+  console.log(cat);
+}
+
+let object = { a: 1, b: 2, c: 3 };
+for (let property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+let str = '';
+for (let i = 0; i < 9; i++) {
+  str = str + i;
+}
+console.log(str);
+
 
 //function
 
 //Function keydown is using to display which key is pressed
 function logKey(event) {
-    console.log(`You pressed "${event.key}".`);
-  }
+  console.log(`You pressed "${event.key}".`);
+}
 
-  textBox.addEventListener('keydown', logKey);
+textBox.addEventListener('keydown', logKey);
 
 
 //Alternate method
 
 textBox.addEventListener('keydown', function (event) {
-    console.log(`You pressed "${event.key}".`);
+  console.log(`You pressed "${event.key}".`);
 });
 
 //using an arrow function
-textBox.addEventListener('keydown',(event)=> {
-    console.log(`You pressed "${event.key}".`);
+textBox.addEventListener('keydown', (event) => {
+  console.log(`You pressed "${event.key}".`);
 });
 
 //single line arrow function
-textBox.addEventListener("keydown",(event)=>console.log(`you pressed ${event.key}".`));
+textBox.addEventListener("keydown", (event) => console.log(`you pressed ${event.key}".`));
 
 //the function take only one parameter so omit the bracket
 
-textBox.addEventListener("keydown",event=>console.log(`You pressed ${event.key}".`));
+textBox.addEventListener("keydown", event => console.log(`You pressed ${event.key}".`));
 
 
 //using an map
- const list=[1,2,3,4,5]
-const result=list.map((re=>re*2))
+const list = [1, 2, 3, 4, 5]
+const result = list.map((re => re * 2))
 console.log(result);
 
 //alert the user
@@ -484,7 +562,7 @@ alert("Hello ")
 const body = document.body;
 
 const panel = document.createElement('div');
-panel.setAttribute('class','msgBox');
+panel.setAttribute('class', 'msgBox');
 body.appendChild(panel);
 
 const msg = document.createElement('p');
@@ -501,7 +579,7 @@ closeBtn.addEventListener('click', () => panel.parentNode.removeChild(panel));
 const res = document.querySelector('.btn');
 
 function random(number) {
-  return Math.floor(Math.random() * (number+1));
+  return Math.floor(Math.random() * (number + 1));
 }
 
 res.addEventListener('click', () => {
@@ -517,7 +595,7 @@ btn.removeEventListener('click', changeBackground);
 const btn = document.querySelector('button');
 
 function random(number) {
-  return Math.floor(Math.random() * (number+1));
+  return Math.floor(Math.random() * (number + 1));
 }
 
 function bgChange(e) {
@@ -588,7 +666,7 @@ box1.addEventListener('click', () => box1.classList.add('hidden'));
 
 
 //Event capture least nested to highest nested
-const output1= document.querySelector('#output');
+const output1 = document.querySelector('#output');
 function handleClick(e) {
   output1.textContent += `You clicked on a ${e.currentTarget.tagName} element\n`;
 }
@@ -602,24 +680,21 @@ button.addEventListener('click', handleClick);
 
 //Event Delegation random color change
 function random(number) {
-    return Math.floor(Math.random()*number);
-  }
-  
-  function bgChange() {
-    const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-    return rndCol;
-  }
-  
-  const container = document.querySelector('#container');
-  
-  container.addEventListener('click', (event) => event.target.style.backgroundColor = bgChange());
+  return Math.floor(Math.random() * number);
+}
 
+function bgChange() {
+  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  return rndCol;
+}
 
+const container = document.querySelector('#container');
+
+container.addEventListener('click', (event) => event.target.style.backgroundColor = bgChange());
 
 //dyamic Function
 function myFunc() {
-    let para = document.createElement('h2');
-    para.textContent = 'You clicked ';
-    document.body.appendChild(para);
-
+  let para = document.createElement('h2');
+  para.textContent = 'You clicked ';
+  document.body.appendChild(para);
 }
