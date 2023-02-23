@@ -1,2 +1,0 @@
-# Lamp
-HTML,CSS,JAVA SCRIPT
