@@ -771,4 +771,46 @@ function Student(name,marks)
   var stud=new Student("John",80);  
   document.writeln(stud.name+" "+stud.marks);  
 
-  //
+  //Callbacks
+  console.log('fired first');
+console.log('fired second');
+
+setTimeout(()=>{
+    console.log('fired third');
+},2000);
+
+console.log('fired last');
+
+//promise
+const getData = (dataEndpoint) => {
+   return new Promise ((resolve, reject) => {
+      if(requestissuccessful)
+      {
+        resolve();
+     }
+     else if(thereisanerror){
+       reject();
+     }
+   
+   });
+};
+
+//async & await
+const asyncFunc = async () => {
+	const response = await fetch(resource);
+   	const data = await response.json();
+}
+
+const asyncFunc1 = async () => {
+	const response = await fetch(resource);
+   	const data = await response.json();
+}
+
+console.log(1);
+cosole.log(2);
+
+asyncFunc1().then(data => console.log(data));
+
+console.log(3);
+console.log(4);
+
