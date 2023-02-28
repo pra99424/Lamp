@@ -1,18 +1,18 @@
 
-// const para = document.querySelector('p');
+// let para = document.querySelector('p');
 // para.addEventListener('click', updateName);
 // function updateName() {
-//     const name = prompt('Enter a new name');
+//     let name = prompt('Enter a new name');
 //     para.textContent = `NAME: ${name}`;
 // }
 
 // alert("Welcome");
 
-const name = 'Bingo';
+let name = 'Bingo';
 console.log('name');
-const hello = ' says hello!';
+let hello = ' says hello!';
 console.log("hello");
-const greeting = 'name' + 'hello';
+let greeting = 'name' + 'hello';
 console.log("greeting");
 
 console.log(2 + 2);
@@ -36,20 +36,20 @@ console.log(a += 3);
 console.log(b += ' world');
 
 let x = 2;
-const y = 3;
+let y = 3;
 
 console.log(x);
 console.log(x = y + 1);
 //multiply * operator
 console.log(x = x * y);
 
-const myInt = 5;
+let myInt = 5;
 
 console.log(typeof myInt);
 
 
 
-const myFloat = 6.667;
+let myFloat = 6.667;
 
 console.log(typeof myFloat);
 
@@ -57,13 +57,13 @@ console.log(typeof myFloat);
 
 
 
-const lotsOfDecimal = 1.766584958675746364;
+let lotsOfDecimal = 1.766584958675746364;
 
 lotsOfDecimal;
 
 
 
-const twoDecimalPlaces = lotsOfDecimal.toFixed(3); //to fixed is used to round up the number
+let twoDecimalPlaces = lotsOfDecimal.toFixed(3); //to fixed is used to round up the number
 
 console.log(twoDecimalPlaces);
 
@@ -87,9 +87,9 @@ console.log(myNumber)
 
 
 
-const num1 = 10
+let num1 = 10
 
-const num2 = 5
+let num2 = 5
 
 let add;
 
@@ -157,10 +157,10 @@ console.log(comp3)
 
 //DOM AbortController
 let controller;
-const url = "video.mp4";
+let url = "video.mp4";
 
-// const downloadBtn = document.querySelector(".download");
-// const abortBtn = document.querySelector(".abort");
+// let downloadBtn = document.querySelector(".download");
+// let abortBtn = document.querySelector(".abort");
 
 // downloadBtn.addEventListener("click", fetchVideo);
 
@@ -173,7 +173,7 @@ const url = "video.mp4";
 
 // function fetchVideo() {
 //   controller = new AbortController();
-//   const signal = controller.signal;
+//   let signal = controller.signal;
 //   fetch(url, { signal })
 //     .then((response) => {
 //       console.log("Download complete", response);
@@ -199,7 +199,7 @@ console.log(Number.isFinite(0 / 0));
 
 //String 
 
-const str_1 = "Pradeep T";
+let str_1 = "Pradeep T";
 //length of the string
 console.log(str_1.length);
 //String.prototype.at()
@@ -220,8 +220,8 @@ console.log(str_1.charAt(3));
 console.log(str_1.charCodeAt(0));
 console.log("Pradeep".charCodeAt(0));
 //String.prototype.concat()
-const str_2 = "Pradeep ";
-const str_3 = "Thirumoorthy";
+let str_2 = "Pradeep ";
+let str_3 = "Thirumoorthy";
 console.log(str_2.concat(" , ", str_3));
 //String.prototype.endsWith() true or false
 console.log(str_2.endsWith('p'));
@@ -257,7 +257,7 @@ console.log(arr)
 
 
 
-const random = ['tree', 795, [0, 1, 2]];
+let random = ['tree', 795, [0, 1, 2]];
 
 console.log(random[2][0]);
 
@@ -339,37 +339,37 @@ console.log(twice);
 function long(companies) {
   return companies.length > 3;
 }
-const companies = ['aspire', 'tcs', 'cts', 'zoho', 'dell'];
-const filteration = companies.filter(long);
+let companies = ['aspire', 'tcs', 'cts', 'zoho', 'dell'];
+let filteration = companies.filter(long);
 console.log(filteration);
 //split()
-const text = "My name is Dinesh K";
-const spliting = text.split(" ", 3); //my , name , dinesh
+let text = "My name is Dinesh K";
+let spliting = text.split(" ", 3); //my , name , dinesh
 document.getElementById("store").innerHTML = spliting;
 //join()
 console.log(companies.join('-'));
 //to string
 console.log(numbers.toString());
 //creating empty array
-const player = new Array(3);
+let player = new Array(3);
 //Array.prototype.at()
 console.log(companies.at(-1)); // finding the last item
 //Array.prototype.concat()
-const number_1 = [1, 3, 5, 7, 9];
-const number_2 = [2, 4, 6, 8, 10];
+let number_1 = [1, 3, 5, 7, 9];
+let number_2 = [2, 4, 6, 8, 10];
 console.log(number_1.concat(number_2));  //merge two arrays
 //Array.prototype.copyWithin()
 console.log(number_1.copyWithin(0, 3));//7,9,5,7,9
 console.log(number_1.copyWithin(0, 3, 4));
 //Array.prototype.entries()
-const array1 = ["a", "b", "c"];
-const arrayEntries = array1.entries();
-for (const element of arrayEntries) {
+let array1 = ["a", "b", "c"];
+let arrayEntries = array1.entries();
+for (let element of arrayEntries) {
   console.log(element);
 }
 //Array.prototype.every()
-const check = [2, 4, 6, 8, 10]
-const every_ele = check.every(finding)
+let check = [2, 4, 6, 8, 10]
+let every_ele = check.every(finding)
 console.log(every_ele);
 function finding(result) {
   return result >= 2;
@@ -378,21 +378,21 @@ function finding(result) {
 console.log(number_1.fill(5));
 console.log(number_1.fill(1, 3));
 //Array.prototype.find()
-const array_3 = [5, 1, 8, 130, 44];
-const found = array_3.find(element => element > 10);
+let array_3 = [5, 1, 8, 130, 44];
+let found = array_3.find(element => element > 10);
 console.log(found);
 //Array.prototype.findIndex()
-const index = array_3.findIndex(element => element > 10);
+let index = array_3.findIndex(element => element > 10);
 console.log(index);
 //Array.prototype.findLast()
-const array_4 = [5, 12, 50, 130, 44];
-const founds = array_4.findLast((element) => element > 45);
+let array_4 = [5, 12, 50, 130, 44];
+let founds = array_4.findLast((element) => element > 45);
 console.log(founds);
 //Array.prototype.flat()
-const arr_1 = [0, 1, 2, [3, 4]];
+let arr_1 = [0, 1, 2, [3, 4]];
 console.log(arr_1.flat());
 // Array.from()
-const string = "dinesh";
+let string = "dinesh";
 console.log(Array.from(string));
 //Array.prototype.includes()
 console.log(arr_1.includes(2)); //checking whether the number is there or not
@@ -406,20 +406,20 @@ console.log([1, 2, 3, 4, 5].reverse());
 //slice
 console.log([1, 2, 3, 4, 5].slice(0, 3));
 //splice
-const arr_2 = ['mon', 'wednes', 'thur'];
+let arr_2 = ['mon', 'wednes', 'thur'];
 arr_2.splice(1, 0, 'tues')
 console.log(arr_2);
 //unshift
-const arr_3 = [4, 5, 6, 7, 8, 9, 10];
+let arr_3 = [4, 5, 6, 7, 8, 9, 10];
 arr_3.unshift(1, 2, 3);
 console.log(arr_3);
 
 //if-else
-const choice = document.getElementById("food");
-const paragraph = document.getElementById("list");
+let choice = document.getElementById("food");
+let paragraph = document.getElementById("list");
 choice.addEventListener('change', details);
 function details() {
-  const info = choice.value;
+  let info = choice.value;
   if (info == 'Idly') {
     paragraph.textContent = 'Idli or idly is a type of savoury rice cake, originating from South India, popular as a breakfast food in Southern India and in Sri Lanka.';
     paragraph.style.backgroundColor = "pink";
@@ -444,13 +444,13 @@ function details() {
 
 //Switch
 
-const select = document.querySelector('select');
-const textselecting = document.querySelector('#forecast');
+let select = document.querySelector('select');
+let textselecting = document.querySelector('#forecast');
 
 select.addEventListener('change', setWeather);
 
 function setWeather() {
-  const choice = select.value;
+  let choice = select.value;
 
   switch (choice) {
     case 'sunny':
@@ -472,8 +472,8 @@ function setWeather() {
 
 //Ternary operator
 
-const selecting = document.querySelector('select');
-const html = document.querySelector('html');
+let selecting = document.querySelector('select');
+let html = document.querySelector('html');
 document.body.style.padding = '10px';
 
 function update(bgColor, textColor) {
@@ -550,8 +550,8 @@ textBox.addEventListener("keydown", event => console.log(`You pressed ${event.ke
 
 
 //using an map
-const list = [1, 2, 3, 4, 5]
-const result = list.map((re => re * 2))
+let list = [1, 2, 3, 4, 5]
+let result = list.map((re => re * 2))
 console.log(result);
 
 //alert the user
@@ -559,31 +559,31 @@ alert("Hello ")
 
 
 
-const body = document.body;
+let body = document.body;
 
-const panel = document.createElement('div');
+let panel = document.createElement('div');
 panel.setAttribute('class', 'msgBox');
 body.appendChild(panel);
 
-const msg = document.createElement('p');
+let msg = document.createElement('p');
 msg.textContent = 'This is a message box';
 panel.appendChild(msg);
 
-const closeBtn = document.createElement('button');
+let closeBtn = document.createElement('button');
 closeBtn.textContent = 'x';
 panel.appendChild(closeBtn);
 
 closeBtn.addEventListener('click', () => panel.parentNode.removeChild(panel));
 
 
-const res = document.querySelector('.btn');
+let res = document.querySelector('.btn');
 
 function random(number) {
   return Math.floor(Math.random() * (number + 1));
 }
 
 res.addEventListener('click', () => {
-  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  let rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
   document.body.style.backgroundColor = rndCol;
 });
 
@@ -592,14 +592,14 @@ res.addEventListener('click', () => {
 btn.removeEventListener('click', changeBackground);
 
 //Event objects
-const btn = document.querySelector('button');
+let btn = document.querySelector('button');
 
 function random(number) {
   return Math.floor(Math.random() * (number + 1));
 }
 
 function bgChange(e) {
-  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  let rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
   e.target.style.backgroundColor = rndCol;
   console.log(e);
 }
@@ -608,16 +608,16 @@ btn.addEventListener('click', bgChange);
 
 
 //display the key pressed
-const textBox = document.querySelector("#textBox");
-const outputt = document.querySelector("#output");
+let textBox = document.querySelector("#textBox");
+let outputt = document.querySelector("#output");
 textBox.addEventListener('keydown', (event) => outputt.textContent = `You pressed "${event.key}".`);
 
 
 //prevent the event
-const form = document.querySelector('form');
-const fname = document.getElementById('fname');
-const lname = document.getElementById('lname');
-const para = document.querySelector('p');
+let form = document.querySelector('form');
+let fname = document.getElementById('fname');
+let lname = document.getElementById('lname');
+let para = document.querySelector('p');
 
 form.addEventListener('submit', (e) => {
   if (fname.value === '' || lname.value === '') {
@@ -628,22 +628,22 @@ form.addEventListener('submit', (e) => {
 
 
 //Event Bubbling
-const output = document.querySelector('#output');
+let output = document.querySelector('#output');
 function handleClick(e) {
   output.textContent += `You clicked on a ${e.currentTarget.tagName} element\n`;
 }
 
-const container1 = document.querySelector('#container');
-const button1 = document.querySelector('button');
+let container1 = document.querySelector('#container');
+let button1 = document.querySelector('button');
 document.body.addEventListener('click', handleClick);
 container1.addEventListener('click', handleClick);
 button1.addEventListener('click', handleClick);
 
 
 //fixing the event bubbling
-const btw = document.querySelector('button');
-const box = document.querySelector('div');
-const video = document.querySelector('video');
+let btw = document.querySelector('button');
+let box = document.querySelector('div');
+let video = document.querySelector('video');
 
 btw.addEventListener('click', () => box.classList.remove('hidden'));
 video.addEventListener('click', () => video.play());
@@ -651,9 +651,9 @@ box.addEventListener('click', () => box.classList.add('hidden'));
 
 
 //stop propogation()
-const btn1 = document.querySelector('button');
-const box1 = document.querySelector('div');
-const video1 = document.querySelector('video');
+let btn1 = document.querySelector('button');
+let box1 = document.querySelector('div');
+let video1 = document.querySelector('video');
 
 btn1.addEventListener('click', () => box1.classList.remove('hidden'));
 
@@ -666,13 +666,13 @@ box1.addEventListener('click', () => box1.classList.add('hidden'));
 
 
 //Event capture least nested to highest nested
-const output1 = document.querySelector('#output');
+let output1 = document.querySelector('#output');
 function handleClick(e) {
   output1.textContent += `You clicked on a ${e.currentTarget.tagName} element\n`;
 }
 
-const container2 = document.querySelector('#container');
-const button = document.querySelector('button');
+let container2 = document.querySelector('#container');
+let button = document.querySelector('button');
 
 document.body.addEventListener('click', handleClick, { capture: true });
 container2.addEventListener('click', handleClick, { capture: true });
@@ -684,11 +684,11 @@ function random(number) {
 }
 
 function bgChange() {
-  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  let rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
   return rndCol;
 }
 
-const container = document.querySelector('#container');
+let container = document.querySelector('#container');
 
 container.addEventListener('click', (event) => event.target.style.backgroundColor = bgChange());
 
@@ -713,7 +713,7 @@ class Professor extends Person {
 
   teaches;
 
-  constructor(name, teaches) {
+  letructor(name, teaches) {
     super(name);
     this.teaches = teaches;
   }
@@ -723,7 +723,7 @@ class Professor extends Person {
   }
 
   grade(paper) {
-    const grade = Math.floor(Math.random() * (5 - 1) + 1);
+    let grade = Math.floor(Math.random() * (5 - 1) + 1);
     console.log(grade);
   }
 
@@ -782,7 +782,7 @@ setTimeout(()=>{
 console.log('fired last');
 
 //promise
-const getData = (dataEndpoint) => {
+let getData = (dataEndpoint) => {
    return new Promise ((resolve, reject) => {
       if(requestissuccessful)
       {
@@ -796,21 +796,232 @@ const getData = (dataEndpoint) => {
 };
 
 //async & await
-const asyncFunc = async () => {
-	const response = await fetch(resource);
-   	const data = await response.json();
+let asyncFunc = async () => {
+	let response = await fetch(resource);
+   	let data = await response.json();
 }
 
-const asyncFunc1 = async () => {
-	const response = await fetch(resource);
-   	const data = await response.json();
+let asyncFunction = async () => {
+	let response = await fetch(resource);
+   	let data = await response.json();
 }
 
 console.log(1);
 cosole.log(2);
 
-asyncFunc1().then(data => console.log(data));
+asyncFunction().then(data => console.log(data));
 
 console.log(3);
 console.log(4);
 
+// Asynchronous JS
+
+//async function
+function resolveAfter2Seconds() {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve('resolved');
+      }, 2000);
+    });
+  }
+  
+  async function asyncCall() {
+    console.log('calling');
+    const result = await resolveAfter2Seconds();
+    console.log(result);
+    // Expected output: "resolved"
+  }
+  
+  asyncCall();
+
+// Asynchronous function to get data from an API
+async function getDataFromAPI() {
+    try {
+        const response = await fetch('https://example.com/api');
+        const jsonData = aconst btn = document.querySelector('button');
+        wait. response.json();
+
+        console.log(jsonData);
+    } catch (error) {
+        console.log('Error:', error);
+    }
+}
+// Call the function
+getDataFromAPI();
+
+//fetching data from a json file
+const savedData = [];
+const link = new Request('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+fetch(link)
+    .then((response) => {
+        const result = response;
+        console.log(result);
+        return response.json();
+    })
+    .then((data) => {
+        for (i = 0; i < data.length; i++) {
+
+            savedData[i] = data[i].name;
+            const filteredValue = savedData.filter((x) => {
+                if (x.length >= 10) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+            function getdata() {
+                console.log('s--', savedData);
+                console.log('f--', filteredValue);
+            }
+        }
+        getdata();
+
+    });
+
+ //parsing a json file using fetch and creating a list using the resulting object
+ const myList = document.querySelector('ul');
+ const myRequest = new Request('products.json');
+ 
+ fetch(myRequest)
+   .then((response) => response.json())
+   .then((data) => {
+     for (const product of data.products) {
+       const listItem = document.createElement('li');
+       listItem.appendChild(
+         document.createElement('strong')
+       ).textContent = product.Name;
+       listItem.append(
+         ` can be found in ${
+           product.Location
+         }. Cost: `
+       );
+       listItem.appendChild(
+         document.createElement('strong')
+       ).textContent = `£${product.Price}`;
+       myList.appendChild(listItem);
+     }
+   })
+   .catch(console.error);
+
+
+   //set timeout- executes only when the timer runsout
+   setTimeout(() => {console.log("this is the first message")}, 5000);
+   setTimeout(() => {console.log("this is the second message")}, 3000);
+   setTimeout(() => {console.log("this is the third message")}, 1000); 
+   // this is the third message
+   // this is the second message
+   // this is the first message
+   
+   //calling a function with timeout
+   function greet(){
+    console.log('hai');
+  }
+  setTimeout(greet, 2000);
+//timeout for functions with parameters
+function sayHi(phrase, who) {
+    alert(phrase + ', ' + who);
+}
+
+setTimeout(sayHi, 1000, "Hello", "John"); // Hello, John
+  //set timeout different example
+  function makeTalk(animal){
+    const noises = {
+      cat: 'purr',
+      dog: 'woof',
+      cow: 'moo',
+      pig: 'oink',
+    }
+  
+    console.log(`A ${animal} goes ${noises[animal]}.`);
+  }
+  
+  function getRandom (arr) {
+    return arr[Math.floor(Math.random()*arr.length)];
+  }
+  
+  const animals = ['cat', 'dog', 'cow', 'pig'];
+  const randomAnimal = getRandom(animals);
+  
+  setTimeout(() => {
+    makeTalk(randomAnimal);
+  }, 1000);
+ 
+//in the above code you cannot execute all elements inside the array i.e you cannot use set timeout inside a loop
+//ask this to mentor
+for(let index = 0; index < 5; index++){
+    (function(i){
+        setTimeout(function(){
+            console.log('value is ', index);
+        }, 3000);
+    })(index);
+}
+
+//set interval & clearinterval
+// repeat with the interval of 2 seconds
+let time = setInterval(() => alert('tick'), 2000);
+// after 5 seconds stop
+setTimeout(() => { clearInterval(time); alert('stop'); }, 5000);
+
+//nested settimeout
+let time = setTimeout(function tick() {
+    alert('tick');
+    time = setTimeout(tick, 2000); // (*)
+}, 2000);
+
+//json
+{
+  "squadName": "Super hero squad",
+      "homeTown": "Metro City",
+          "formed": 2016,
+              "secretBase": "Super tower",
+                  "active": true,
+                      "members": [
+                          {
+                              "name": "Molecule Man",
+                              "age": 29,
+                              "secretIdentity": "Dan Jukes",
+                              "powers": ["Radiation resistance", "Turning tiny", "Radiation blast"]
+                          },
+                          {
+                              "name": "Madame Uppercut",
+                              "age": 39,
+                              "secretIdentity": "Jane Wilson",
+                              "powers": [
+                                  "Million tonne punch",
+                                  "Damage resistance",
+                                  "Superhuman reflexes"
+                              ]
+                          },
+                          {
+                              "name": "Eternal Flame",
+                              "age": 1000000,
+                              "secretIdentity": "Unknown",
+                              "powers": [
+                                  "Immortality",
+                                  "Heat Immunity",
+                                  "Inferno",
+                                  "Teleportation",
+                                  "Interdimensional travel"
+                              ]
+                          }
+                      ]
+}
+//arrays in json
+[
+  {
+      "name": "Molecule Man",
+      "age": 29,
+      "secretIdentity": "Dan Jukes",
+      "powers": ["Radiation resistance", "Turning tiny", "Radiation blast"]
+  },
+  {
+      "name": "Madame Uppercut",
+      "age": 39,
+      "secretIdentity": "Jane Wilson",
+      "powers": [
+          "Million tonne punch",
+          "Damage resistance",
+          "Superhuman reflexes"
+      ]
+  }
+]
